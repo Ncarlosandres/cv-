@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+
+        body {
+            background-color: #C0FEFC;
+            padding: 40px 10px 10px 40px;
+        }
+        h1 {
+            color: #34a0a0;
+            font-size: 3.125rem;
+            position: relative;
+            text-align: center;
+            margin-top: 150px;
+             font-family: 'Montserrat', sans-serif;
+        }
+
+        li {
+            color: #34a0a0;
+            font-family: 'Montserrat', sans-serif;
+            width: 25%;
+            margin: 5px auto 5px auto;
+            padding: 5px 0;
+            font-size: 20px;
+            line-height: 2;
+        }
+        hr {
+          border: dotted #dee9e9 6px;
+          border-bottom: none;
+          width: 4%;
+          margin: 40px auto;
+           }
+           .tree {
+               
+            position: absolute;
+            left: 100px;
+            bottom: 0;
+            width: 20%;
+           }
+
+           .cloud {
+            position: absolute;
+            right: 300px;
+            top: 40px;
+           }
+         form {
+            color: #34a0a0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            width: 20%;
+            margin: 50px auto 50px auto;
+            text-align: left;
+            line-height: 2;
+         } 
+         input {
+            border-style: outset;
+         }
+
+        
+         .btn {
+            background: #11cdd4;
+            background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+             background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+            background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+            background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+            background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+            -webkit-border-radius: 28;
+            -moz-border-radius: 28;
+            border-radius: 28px;
+            font-family: Arial;
+            color: #ffffff;
+            font-size: 15px;
+            padding: 6px 20px 6px 20px;
+            text-decoration: none;
+             }
+
+        .btn:hover {
+           background: #30e3cb;
+           background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+           background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+           background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+           background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+           background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+           text-decoration: none;
+                   }
+    </style>
+</head>
+<body>
+    <img class="tree" src="css/images/palm-trees.png" alt="tree">
+    <img class="cloud" src="css/images/cloud.png" alt="cloud-img">
+    <h1>My Contact Details</h1>
+    <ul>
+        <li>👨‍🌾 Noam Carlos Andres Diamant</li>
+        <li>☎  050-968-11-88</li>
+        <li>🏡 Sumken 20 Tel aviv Jaffo</li>
+        <li>🎫 diamantnoam@outlook.com</li>
+    </ul>
+    <hr>
+
+   <form action="mailto:diamantnoam@outlook.com" method="post" enctype="text/plain">
+       <label>Your Name:</label>
+      <input type="text" name="name" value=""><br>
+      <label>Your Email:</label>
+      <input type="email" name="email" value=""><br>
+      <label>Your Message:</label><br>
+      <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+      <input class="btn" type="submit" name="send" value="Send">
+   </form>
+</body>
+</html>
